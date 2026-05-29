@@ -1,0 +1,42 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - link "Ymnak ymnak" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Ymnak" [ref=e6]
+        - generic [ref=e7]: ymnak
+      - generic [ref=e8]:
+        - button "Switch to dark mode" [ref=e9] [cursor=pointer]:
+          - img
+        - button "Language" [ref=e10] [cursor=pointer]:
+          - img
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - paragraph [ref=e14]: return
+        - heading "دخول" [level=1] [ref=e15]
+        - paragraph [ref=e16]: أهلاً بعودتك — سجّل دخولك للوصول إلى حسابك.
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]: البريد الإلكتروني
+          - textbox "البريد الإلكتروني" [ref=e21]:
+            - /placeholder: name@example.com
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e24]: كلمة المرور
+            - link "نسيت كلمة المرور؟" [ref=e25] [cursor=pointer]:
+              - /url: /forgot-password
+          - generic [ref=e26]:
+            - textbox "كلمة المرور نسيت كلمة المرور؟" [ref=e27]:
+              - /placeholder: ••••••••
+            - button "Show password" [ref=e28]:
+              - img [ref=e29]
+        - button "دخول" [ref=e32]:
+          - generic [ref=e33]:
+            - text: دخول
+            - img [ref=e34]
+      - generic [ref=e39]: ليس لديك حساب؟
+      - link "إنشاء حساب" [ref=e41] [cursor=pointer]:
+        - /url: /register
+        - generic [ref=e42]: إنشاء حساب
+        - img [ref=e43]
+  - region "Notifications alt+T"
