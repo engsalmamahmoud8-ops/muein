@@ -12,4 +12,10 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Force Nitro on (the lovable config skips it outside its sandbox) and pick the
+  // deploy target via NITRO_PRESET. Defaults to `netlify` so `npm run build`
+  // on Netlify produces a Netlify Function for SSR instead of a Cloudflare Worker.
+  nitro: {
+    preset: process.env.NITRO_PRESET ?? "netlify",
+  },
 });
