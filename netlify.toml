@@ -1,5 +1,5 @@
 [build]
-  command = "npm install --include=optional && npm run build"
+  command = "npm install --include=optional && npm run build && mkdir -p .netlify/functions-internal && cp -r dist/server .netlify/functions-internal/server"
   publish = "dist/client"
 
 [build.environment]
