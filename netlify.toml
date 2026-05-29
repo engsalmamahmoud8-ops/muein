@@ -1,7 +1,8 @@
 [build]
-  command = "npm install && npm run build"
+  command = "npm install --include=optional && npm run build"
   publish = "dist/client"
 
 [build.environment]
   NITRO_PRESET = "netlify"
   NODE_VERSION = "20"
+  NPM_FLAGS = "--include=optional"
