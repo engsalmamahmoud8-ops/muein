@@ -7,5 +7,9 @@ export default defineConfig({
 
   nitro: {
     preset: process.env.NITRO_PRESET ?? "netlify",
+    output: {
+      serverDir: ".netlify/functions-internal/server",
+      publicDir: "dist/client",
+    }
   },
 });
